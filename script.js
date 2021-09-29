@@ -18,7 +18,7 @@ fetch("stad.json")
 .then (stad => stad.json())
 .then( stad => {
     console.log(stad);
-    // country1.insertAdjacentHTML("afterend", "<ul><li>Wow</li></ul>")
+    
     stad.sort((a, b) => {return a.population - b.population});
 
     for (let i = 0; i < stad.length; i++) {
